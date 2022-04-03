@@ -306,7 +306,6 @@ img{
 
                 .avatar{
                     text-align: center;
-                    margin-bottom: 24px;
 
                     img{
                         height: 50%;
@@ -321,6 +320,7 @@ img{
                     max-width: 348px;
                     line-height: 32px;
                     color: $vdark-blue-desaturate;
+                    margin: 0;
                 }
 
                 &:nth-child(3){

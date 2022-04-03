@@ -59,12 +59,6 @@
     text-decoration: none;
     color: #5a636c;
   }
-  .navigation-mobile .menu-mobile ::before {
-    width: 16px;
-    height: 16px;
-    background-color: black;
-    position: absolute;
-  }
 
   .hero {
     margin-top: 80px;

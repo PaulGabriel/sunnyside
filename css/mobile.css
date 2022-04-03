@@ -9,12 +9,16 @@
   }
 
   .navigation .hamburger {
-    display: inline;
+    display: block;
     padding-right: 0;
+  }
+  .navigation .hamburger img {
+    width: 24px;
+    height: 18px;
   }
 
   .navigation-mobile {
-    display: none;
+    display: block;
     position: absolute;
     background-color: white;
     padding: 24px;
@@ -22,12 +26,21 @@
     right: 0;
     margin: 0 32px;
     z-index: 1;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  }
+  .navigation-mobile .dot {
+    width: 0;
+    height: 0;
+    border-bottom: 2.5rem solid #fff;
+    border-left: 2.5rem solid transparent;
+    position: absolute;
+    top: -24px;
+    right: 0;
   }
   .navigation-mobile .menu-mobile {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 24px 0;
   }
   .navigation-mobile .menu-mobile ul {
     padding: 0;
@@ -37,14 +50,20 @@
     align-items: center;
   }
   .navigation-mobile .menu-mobile ul li {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
   .navigation-mobile .menu-mobile ul li:last-child {
     margin-bottom: 24px;
   }
   .navigation-mobile .menu-mobile ul li a {
     text-decoration: none;
-    color: black;
+    color: #5a636c;
+  }
+  .navigation-mobile .menu-mobile ::before {
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
   }
 
   .hero {

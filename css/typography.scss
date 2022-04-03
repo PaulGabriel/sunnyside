@@ -1,0 +1,32 @@
+@import 'colors.scss';
+
+$font-size: 18px;
+$font-fraunces: 'Fraunces', sans-serif;
+$font-barlow: 'Barlow', sans-serif;
+
+
+h1{
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-fraunces;
+    font-size: 4rem;
+    letter-spacing: 16px;
+    text-align: center;
+}
+
+h2{
+    max-width: 362px;
+    font-family: $font-fraunces;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 1em;
+    font-family: $font-fraunces;
+    text-transform: uppercase;
+    color: $gray-blue;
+    letter-spacing: 8px;
+    margin-bottom: 48px;
+
+}

@@ -1,0 +1,24 @@
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Fraunces", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 16px;
+  text-align: center;
+}
+
+h2 {
+  max-width: 362px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  color: #a7abae;
+  letter-spacing: 8px;
+  margin-bottom: 48px;
+}

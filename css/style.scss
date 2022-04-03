@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap');
 @import 'colors.scss';
-
-
-
-$font-size: 18px;
-$font-fraunces: 'Fraunces', sans-serif;
-$font-barlow: 'Barlow', sans-serif;
-
+@import 'typography.scss';
 
 body{
     margin: 0;
@@ -20,23 +14,12 @@ body{
 }
 
 header{
+    position: relative;
     background-image: url('../images/desktop/image-header.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-/*
-.center{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}*/
-
-
-header{
-    position: relative;
 }
 
 .image{
@@ -47,6 +30,11 @@ header{
     &-mobile{
         display: none;
     }
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
 
 .navigation-mobile{
@@ -76,8 +64,6 @@ header{
                 }
             }
         }
-
-     
     }
     .hamburger{
         display: none;
@@ -86,7 +72,6 @@ header{
 
 .btn{
     height: 48px;
-    outline: 0;
     border: 0;
     border-radius: 24px;
     padding: 16px 24px;
@@ -114,15 +99,13 @@ header{
         line-height: 0;
         text-transform: uppercase;
         background-color: $yellow;
-        color: black;
-        
+        color: black;   
     }
 
     &-ghost{
         background-color: transparent;
         border-radius: 0;
-        padding: 0;
-        
+        padding: 0;   
     }
 
     &-link{
@@ -137,7 +120,7 @@ header{
         color: $vdark-blue-desaturate;
         border-radius: 0;
     
-    &.link-yellow{
+        &.link-yellow{
             &::after{
                 content: '';
                 position: absolute;
@@ -148,18 +131,18 @@ header{
                 height: 10px;
                 background-color: $yellow-opacity;
                 z-index: -1;
-            }
+                }
 
             &:hover{
                 cursor: pointer;
 
                 &::after{
-                    background-color: $yellow;
+                        background-color: $yellow;
                 }
             }
         }
-    
-    &.link-pink{
+        
+        &.link-pink{
             &::after{
                 content: '';
                 position: absolute;
@@ -180,7 +163,7 @@ header{
                 }
             }
         }
-    }
+     }
 }
 
 .bounce {
@@ -200,6 +183,7 @@ header{
       transform: translateY(-15px);
     }
   }
+
 .hero{
     width: 100%;
     display: flex;
@@ -211,20 +195,9 @@ header{
 
     .hero__content{
         margin-bottom: 80px;
-        h1{
-            color: $white;
-            text-transform: uppercase;
-            font-family: $font-fraunces;
-            font-size: 4rem;
-            letter-spacing: 16px;
-            text-align: center;
-        }
-
     }
 }
-section{
-    margin-top: -4px;
-}
+
 .section-split-1{
     background-color: $white;
     display: grid;
@@ -241,11 +214,9 @@ section{
                 padding: 32px;
 
                 h2{
-                    max-width: 362px;
-                    font-family: $font-fraunces;
-                    font-size: 2.5rem;
-                    font-weight: 900;
+                    color: $vdark-blue-desaturate;
                 }
+
                 p{
                     max-width: 556px;
                     line-height: 24px;
@@ -253,42 +224,13 @@ section{
                 }
             }
         }
-    img{
-            width: 100%;
-    }
 }
 
 .section-split-2{
-    background-color: $white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    @extend .section-split-1;
 
     .section__content{
         order: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 48px;
-
-            .container{
-                padding: 32px;
-
-                h2{
-                    max-width: 362px;
-                    font-family: $font-fraunces;
-                    font-size: 2.5rem;
-                    font-weight: 900;
-                }
-                p{
-                    max-width: 556px;
-                    line-height: 24px;
-                    color: $vdark-gray-blue;
-                }
-            }
-        }
-    img{
-            width: 100%;
     }
 }
 
@@ -297,13 +239,8 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
-    .section__image--1{
+    .section__image{
         position: relative;
-
-        img{
-            width: 100%;
-        }
-        
 
        .container{
         width: 100%;
@@ -313,34 +250,32 @@ section{
         flex-direction: column;
         align-items: center;
 
-            h2{
-                max-width: 362px;
-                font-family: $font-fraunces;
-                font-size: 2.5rem;
-                font-weight: 900;
-                color: $dark-cyan-desaturate;
-
-            }
-            
             p{
                 max-width: 380px;
                 line-height: 24px;
-                color: $vdark-gray-blue;
                 text-align: center;
             }
         }
-    }
 
-    .section__image--2{
-        @extend .section__image--1;
-        .container{
-
-            & > h2{
-                color: $vdark-blue-desaturate;
+        .split{
+            &-left{
+                h2{
+                    color: $dark-cyan-desaturate;
+                }
+        
+                p{
+                    
+                    color: $vdark-gray-blue;
+                }
             }
-
-            & > p{
-                color: $dark-blue;
+            &-right{
+                h2{
+                    color: $vdark-blue-desaturate;
+                 }
+                p{ 
+    
+                    color: $dark-blue;
+                }
             }
         }
     }
@@ -348,24 +283,12 @@ section{
 
 .section-split-4{
 
-    background-color: $white;
-
     .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 120px 0;
-
-        h3{
-            font-size: 1em;
-            font-family: $font-fraunces;
-            text-transform: uppercase;
-            color: $gray-blue;
-            letter-spacing: 8px;
-            margin-bottom: 48px;
-
-        }
     }
 
     .testimonial-wrapper{
@@ -386,7 +309,7 @@ section{
                     margin-bottom: 24px;
 
                     img{
-                        width: 50%;
+                        height: 50%;
                         border-radius: 50%;
                     }
                 }
@@ -437,7 +360,7 @@ section{
 }
 
 footer{
-    background-color: $dark-cyan-moderate;
+    background-color: $light-cyan;
 }
 
 .footer-wrap{
@@ -446,10 +369,12 @@ footer{
     align-items: center;
     padding: 48px;
 
-    h1{
+    .footer-logo{
         font-weight: 900;
         font-family: $font-barlow;
         color: $dark-cyan-desaturate;
+        font-size: 2.5rem;
+        margin-bottom: 24px;
     }
 
     .footer-nav{
@@ -459,12 +384,16 @@ footer{
 
             li{
                 margin-right:32px;
+
+                a{
+                text-decoration: none;
                 color: $dark-cyan-desaturate;
 
-                &:hover{
-                    cursor: pointer;
-                    color: $white;
+                    &:hover{
+                        color: $white;
+                    }
                 }
+               
             }
         }
     }
@@ -474,8 +403,12 @@ footer{
         a{
             padding: 0 16px;
 
+            img{
+                width: auto;
+            }
+
             &:hover{
-                filter: brightness(0) invert(1);
+                filter: brightness(100);
             }
         }
     }

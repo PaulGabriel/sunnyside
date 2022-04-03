@@ -23,10 +23,12 @@
         </ul>
         <button class="btn btn-primary">Contact</button>
       </nav>
-      <button class="hamburger btn btn-ghost"><img src="images/icon-hamburger.svg" alt=""></button>
+      <button class="hamburger btn btn-ghost" aria-label="Menu"><img src="images/icon-hamburger.svg" alt="Menu button"></button>
     </div>
 
+<!-- Mobile nav -->
     <div class="navigation-mobile">
+      <span class="dot"></span>
       <nav class="menu-mobile">
         <ul>
           <li><a href="#">About</a></li>
@@ -36,15 +38,17 @@
         <button class="btn btn-secondary">Contact</button>
       </nav>
     </div>
-    
+<!-- --------------------------- -->
+
     <div class="hero">
       <div class="hero__content">
         <h1>We are creatives</h1>
       </div>
-      <div class="herro__arrow bounce"><a href="#section-1"><img src="images/icon-arrow-down.svg" alt=""></a></div>
+      <div class="herro__arrow bounce" aria-label="Scroll down"><a href="#section-1"><img src="images/icon-arrow-down.svg" alt="Scroll down"></a></div>
     </div>
   </header>
 
+<main>
   <section class="section-split-1" id="section-1">
     <div class="section__content">
       <div class="container">
@@ -55,8 +59,8 @@
       </div>
     </div>
     <div class="section__image">
-      <img src="images/mobile/image-transform.jpg" alt="" class="image-mobile">
-      <img src="images/desktop/image-transform.jpg" alt="" class="image-desktop">
+      <img src="images/mobile/image-transform.jpg" alt="Egg on a yellow background" class="image-mobile">
+      <img src="images/desktop/image-transform.jpg" alt="Egg on a yellow background" class="image-desktop">
     </div>
   </section>
 
@@ -69,24 +73,24 @@
       </div>
     </div>
     <div class="section__image">
-      <img src="images/desktop/image-stand-out.jpg" alt="">
+      <img src="images/desktop/image-stand-out.jpg" alt="Glass of a glass on a pink background">
     </div>
   </section>
 
   <section class="section-split-3">
-    <div class="section__image--1">
-      <img src="images/mobile/image-graphic-design.jpg" alt="" class="image-mobile">
-      <img src="images/desktop/image-graphic-design.jpg" alt="" class="image-desktop">
-      <div class="container">
+    <div class="section__image">
+      <img src="images/mobile/image-graphic-design.jpg" alt="Two red cherries" class="image-mobile">
+      <img src="images/desktop/image-graphic-design.jpg" alt="Two red cherries" class="image-desktop">
+      <div class="container split-left">
         <h2>Graphic design</h2>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
         </div>
       </div>
     </div>
-    <div class="section__image--2">
-      <img src="images/mobile/image-photography.jpg" alt="" class="image-mobile">
-      <img src="images/desktop/image-photography.jpg" alt="" class="image-desktop">
-      <div class="container">
+    <div class="section__image">
+      <img src="images/mobile/image-photography.jpg" alt="One orange" class="image-mobile">
+      <img src="images/desktop/image-photography.jpg" alt="One orange" class="image-desktop">
+      <div class="container split-right">
         <h2>Photography</h2>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
         </div>
@@ -100,21 +104,21 @@
       <h3>Client testimonials</h3>
         <div class="testimonial-wrapper">
           <div class="testimonial">
-            <div class="avatar"><img src="/images/image-emily.jpg" alt=""></div>
+            <div class="avatar"><img src="/images/image-emily.jpg" alt="Photo of Emily R"></div>
             <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
             <p>Emily R.</p>
             <p>Marketing director</p>
           </div>
 
           <div class="testimonial">
-            <div class="avatar"><img src="/images/image-thomas.jpg" alt=""></div>
+            <div class="avatar"><img src="/images/image-thomas.jpg" alt="Photo of Thomas S"></div>
             <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
             <p>Thomas S.</p>
             <p>Chief Operating Officer</p>
           </div>
 
           <div class="testimonial">
-            <div class="avatar"><img src="/images/image-jennie.jpg" alt=""></div>
+            <div class="avatar"><img src="/images/image-jennie.jpg" alt="Photo of Jennie F"></div>
             <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
               Jennie F.</p>
             <p>Jennie F.</p>
@@ -126,39 +130,48 @@
 
   <section class="section-split-5">
     <div class="container">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="3 white milk bottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="Orange on a plate">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="Icecream cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
     </div>
   </section>
 
+</main>
 
-  <footer>
-    <div class="footer-wrap">
-    <h1>sunnyside</h1>
+<footer>
+  <div class="footer-wrap">
+    <span class="footer-logo">sunnyside</span>
     <div class="footer-nav">
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
       </ul>
     </div>
     <div class="social">
-      <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
-      <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
-      <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+      <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
     </div>
   </div>
-  </footer>
+</footer>
 </body>
- <script>
- $(document).ready(function(){
-  $(".hamburger").click(function(){
-    $(".navigation-mobile").toggle();
+
+
+<script>
+  $(document).ready(function() {
+  var $menuBtn = $('.hamburger'),
+      $nav = $('.navigation-mobile');
+      
+  $nav.hide();
+  
+  $menuBtn.on('click',function(e) {
+    e.preventDefault();
+    $nav.slideToggle();
   });
 });
-</script> 
+</script>
 
 </html>
